@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Header from '../components/header';
 
 export async function getStaticPaths() {
   return {
@@ -41,7 +42,7 @@ const Page = () => {
 
   return (
     <>
-
+      <Header />
       <h1>Slug: {slug.join('/')}</h1>
     </>
   )

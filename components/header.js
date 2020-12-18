@@ -9,24 +9,8 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/post/[...slug]"
-          as="/post/2020/first-post/with/catch/all/routes"
-        >
-          <a>First Post</a>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/post/[...slug]"
-          as="/post/2020/second-post/with/catch/all/routes"
-        >
-          <a>Second Post</a>
+        <Link href="/login">
+          <a>Go to login</a>
         </Link>
       </li>
     </ul>
