@@ -19,6 +19,8 @@ export async function getStaticProps({ params }) {
     data: 123
   }
 
+  // We cant get query since we are on server side
+  // How to redirect to a pretty login url?
   if (params && params.slug && params.slug[0] === 'login') {
     return {
       redirect: {

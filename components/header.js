@@ -13,16 +13,15 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="/login" prefetch={false}>
-            <a
-              onClick={(event => {
-                event.preventDefault()
-                push('/login?redirectTo=/logged-in');
-              })}>
+          <a
+            href="/login"
+            onClick={(event => {
+              event.preventDefault()
+              push('/login?redirectTo=/logged-in');
+            })}>
 
-              Go to login
+            Go to login
           </a>
-          </Link>
         </li>
       </ul>
     </header>
